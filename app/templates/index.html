@@ -35,11 +35,11 @@
                             </td>
                             <td>{{ todo.time.strftime('%H:%M %d-%m-%Y') }}</td>
                             {% if todo.status == 1 %}
-                                <td><a href="/undone/{{ todo.id }}" class="btn btn-primary">Undone</a></td>
+                                <td><a href="/未完成/{{ todo.id }}" class="btn btn-primary">未完成</a></td>
                             {% else %}
-                                <td><a href="/done/{{ todo.id }}" class="btn btn-primary">Done</a></td>
+                                <td><a href="/完成/{{ todo.id }}" class="btn btn-primary">完成</a></td>
                             {% endif %}
-                            <td><a href="/delete/{{ todo.id }}" class="btn btn-danger">Delete</a></td>
+                            <td><a href="/删除/{{ todo.id }}" class="btn btn-danger">删除</a></td>
 
                         </tr>
                    {% endfor %}
