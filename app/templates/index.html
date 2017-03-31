@@ -33,7 +33,7 @@
                                 未完成
                                 {% endif %}
                             </td>
-                            <td>{{ todo.time.strftime('%H:%M %d-%m-%Y') }}</td>
+                            <td>{{ todo.time.strftime('%Y-%m-%d-%H:%M ') }}</td>
                             {% if todo.status == 1 %}
                                 <td><a href="/未完成/{{ todo.id }}" class="btn btn-primary">未完成</a></td>
                             {% else %}
